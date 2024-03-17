@@ -1,0 +1,223 @@
+{
+  "info": {
+    "_postman_id": "ddb5070b-3af9-43f2-8a9a-cc6a70da2c2b",
+    "name": "littleUA",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "2133454"
+  },
+  "item": [
+    {
+      "name": "Headers",
+      "item": [
+        {
+          "name": "mirror",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Custom-Header",
+                "value": "hello-theader!",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:8080/headers/mirror",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "headers",
+                "mirror"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "mirror",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Custom-Header",
+                    "value": "hello-theader!",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "localhost:8080/headers/mirror",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "headers",
+                    "mirror"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 17 Mar 2024 00:38:23 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"name\": \"custom-header\",\n        \"value\": \"hello-theader!\"\n    },\n    {\n        \"name\": \"user-agent\",\n        \"value\": \"PostmanRuntime/7.37.0\"\n    },\n    {\n        \"name\": \"accept\",\n        \"value\": \"*/*\"\n    },\n    {\n        \"name\": \"cache-control\",\n        \"value\": \"no-cache\"\n    },\n    {\n        \"name\": \"postman-token\",\n        \"value\": \"e22184ed-dcea-460e-96d9-7bb666b488f6\"\n    },\n    {\n        \"name\": \"host\",\n        \"value\": \"localhost:8080\"\n    },\n    {\n        \"name\": \"accept-encoding\",\n        \"value\": \"gzip, deflate, br\"\n    },\n    {\n        \"name\": \"connection\",\n        \"value\": \"keep-alive\"\n    }\n]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Useragent",
+      "item": [
+        {
+          "name": "Upsert",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/useragent",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "useragent"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "upsert",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/useragents",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "useragents"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "plain",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain;charset=UTF-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "21"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 17 Mar 2024 00:38:38 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "PostmanRuntime/7.37.0"
+            }
+          ]
+        },
+        {
+          "name": "List",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/useragents",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "useragents"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "list",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "localhost:8080/useragents",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "8080",
+                  "path": [
+                    "useragents"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Transfer-Encoding",
+                  "value": "chunked"
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 17 Mar 2024 00:38:59 GMT"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=60"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": \"c71f40c4c7c8ef37a87c01ff36e55e29a97d7b37b42290f2f256d4d2c7267d04\",\n        \"useragent\": \"PostmanRuntime/7.37.0\",\n        \"updated\": \"2024-03-17 01:38:38\"\n    },\n    {\n        \"id\": \"c43197175c29791b2b5f1eb8b229396aa307907d157fe25e86777917681931a7\",\n        \"useragent\": \"Mozilla/5.0 Testing 10\",\n        \"updated\": \"2024-03-17 01:07:42\"\n    },\n    {\n        \"id\": \"2c57252a1ce120a0e09eb9a6bb5dc699d26c3c8a3fa1437a18b78f7c9fbd6121\",\n        \"useragent\": \"Mozilla/5.0 Testing 9\",\n        \"updated\": \"2024-03-17 01:07:42\"\n    },\n    {\n        \"id\": \"3c3ea82700a09ef36e91ff593cc88d124d2d53b235352da3410828885ab5c2bd\",\n        \"useragent\": \"Mozilla/5.0 Testing 8\",\n        \"updated\": \"2024-03-17 01:07:42\"\n    },\n    {\n        \"id\": \"f57fcbf387cdfd92f70a860dca4e136e9cdb9cb5e4a6a4bd5f30e783abddf707\",\n        \"useragent\": \"Mozilla/5.0 Testing 7\",\n        \"updated\": \"2024-03-17 01:07:42\"\n    },\n    {\n        \"id\": \"c601a9da906692b132b128a154ce4f6c676caf2f093073759436bd0d0a13dab0\",\n        \"useragent\": \"Mozilla/5.0 Testing 6\",\n        \"updated\": \"2024-03-17 01:07:42\"\n    },\n    {\n        \"id\": \"78b697be8b8ec1ee08908848263245c9c48e7272851852becccd6ecd3237e466\",\n        \"useragent\": \"Mozilla/5.0 Testing 5\",\n        \"updated\": \"2024-03-17 01:07:42\"\n    },\n    {\n        \"id\": \"0c8abf6c5ad8b6dc3a89bb7ccf4b5e8fd09052331412352cafade45b0e626eee\",\n        \"useragent\": \"Mozilla/5.0 Testing 4\",\n        \"updated\": \"2024-03-17 01:07:42\"\n    },\n    {\n        \"id\": \"54ac39388a51159541cb6c1757141b15fe2c71b37647b96224336d5d8d1f682f\",\n        \"useragent\": \"Mozilla/5.0 Testing 3\",\n        \"updated\": \"2024-03-17 01:07:42\"\n    },\n    {\n        \"id\": \"c31dc8d96ae84ad313b304878a11e252fb240bcb45232c86b899fec5a009196c\",\n        \"useragent\": \"Mozilla/5.0 Testing 2\",\n        \"updated\": \"2024-03-17 01:07:42\"\n    }\n]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
